@@ -40,15 +40,17 @@ const Details = () => {
         <div className="text-center">
             
             {selectedArticle && (
-                <Container>
-                    <h1 style={{color: '#FCA311'}}>{selectedArticle.title}</h1>
-                    <img src={selectedArticle.imageUrl} alt="flight img" style={{width: '500px'}}></img>
-                   <Row className="details">
-                        <Col md={12}><ListGroupItem className="text-dark"><h4>Published at:</h4>{selectedArticle.publishedAt}</ListGroupItem></Col>
-                        <Col md={12}><ListGroupItem className="text-dark"><h4>News Site:</h4>{selectedArticle.newsSite}</ListGroupItem></Col>
-                        <Col md={12}><ListGroupItem className="text-dark"><h4>Article ID:</h4>{selectedArticle.id}</ListGroupItem></Col>
-                       <Col md={12}> <ListGroupItem className="text-dark"><h4>Summary:</h4>{selectedArticle.summary}</ListGroupItem></Col>
-                   </Row>
+                <Container className="detailsContainer">
+                    <Row>
+                        <h1 style={{color: '#FCA311'}}>{selectedArticle.title}</h1>
+                        <Col md={6}><img src={selectedArticle.imageUrl} alt="flight img" style={{width: '500px'}} className="mb-2"></img></Col>
+                       <Col md={6}className="details">
+                            <ListGroupItem className="text-dark details-list"><h4 className="mx-3">Published at:</h4>{selectedArticle.publishedAt}</ListGroupItem>
+                            <ListGroupItem className="text-dark details-list"><h4 className="mx-3">News Site:</h4>{selectedArticle.newsSite}</ListGroupItem>
+                            <ListGroupItem className="text-dark details-list"><h4 className="mx-3">Article ID:</h4>{selectedArticle.id}</ListGroupItem>
+                            <ListGroupItem className="text-dark details-list"><h4 className="mx-3">Summary:</h4>{selectedArticle.summary}</ListGroupItem>
+                       </Col>
+                    </Row>
                 </Container>
             )}
         </div>

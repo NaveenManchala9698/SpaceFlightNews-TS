@@ -31,7 +31,7 @@ const fetchArticles = async () => {
 
 return (
     <div>
-        <h1 className="mt-4">SpaceFlight News</h1>
+        <h1 className="mt-4" >SpaceFlight News</h1>
         <div>
             <Container>
                 <Row>

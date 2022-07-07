@@ -18,3 +18,17 @@
 
 
 
+
+.details {
+  max-width: fit-content;
+ text-align: left;
+display: block !important;
+
+}
+
+.details-list {
+  display: flex !important;
+  align-items: baseline !important;
+  background-color: #ececec !important;
+}
+
