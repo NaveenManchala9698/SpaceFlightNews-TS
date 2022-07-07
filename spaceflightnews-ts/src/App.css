@@ -18,6 +18,17 @@
 
 
 
+.article-img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.article-img:hover {
+  box-shadow: 5px 5px 5px rgb(155, 153, 177);
+  opacity: 1;
+}
+
+
 
 .details {
   max-width: fit-content;

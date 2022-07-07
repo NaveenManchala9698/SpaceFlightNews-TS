@@ -18,9 +18,9 @@ const SingleArticle = ({article}: SingleArticleProps) => {
     return(
         
   <div className="mb-4 mt-4">
-      <img src={article.imageUrl} alt="flight pic" style={{width: '250px', height: '300px', borderRadius: '10px'}} className="mb-3"
+      <img src={article.imageUrl} alt="flight pic"  style={{width: '250px', height: '300px', borderRadius: '10px'}} className="mb-3 article-img"
       onClick={showDetails}/>
-      <h5>{article.title}</h5>
+      <h5 className="article-title">{article.title}</h5>
         
   </div>
     
